@@ -12,4 +12,8 @@ router.use(('/', (req, res) => {
     `);
 }));
 
+router.get('/prueba', (req, res) => {
+    res.status(200).json({message: 'todo ok'});
+})
+
 module.exports = router;
